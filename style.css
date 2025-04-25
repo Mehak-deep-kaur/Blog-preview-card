@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Figtree", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width:100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.card{
+    width: 25%;
+    min-height: 60%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 7px 7px 1px hsl(0, 0%, 7%) ;
+    border: 1px solid  hsl(0, 0%, 7%) ;
+}
+
+.image > img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.description > button{
+    background-color: hsl(47, 88%, 63%);
+    border: none;
+    padding: 5px;  
+    width: 25%;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.description >button:hover{
+    cursor: pointer;
+}
+
+.description{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.description >p{
+    color: hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+
+.description > :nth-child(1){
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+}
+
+#publish_id{
+    color: hsl(0, 0%, 7%);
+}
+
+.publisher{
+    display: flex;
+}
+.publisher >img{
+    width: 12%;
+     margin-right: 10px;
+}
+
+@media (width<=600px) {
+    .card{
+        width: 80%;
+    }
+}
